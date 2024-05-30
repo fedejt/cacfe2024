@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Penny Petshop</title>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <div class="header-logo">
+            <ul>
+                <li>
+                    <img src="img/logo.jpg" alt="Logo">
+                </li>
+                <li>
+                    <h1>Penny Petshop</h1>
+                </li>
+            </ul>
+        </div>
+        <div class="header-contacto">
+            <ul>
+                <li>
+                    <img src="img/whatsapp.png" alt="Whatsapp">
+                </li>
+                <li>
+                    <p>11-1234-5678</p>
+                </li>
+            </ul>
+            
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Principal</a></li>
+            <li class="menu-item"><a href="#">Perros</a></li>
+            <li class="menu-item"><a href="#">Gatos</a></li>
+            <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+            <li class="menu-item"><a href="sucursales.html">Sucursales</a></li>
+            <li class="menu-item"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <h1 class="contacto-title">Contacto</h1>
+
+        <form id="formulario-contacto" action="https://script.google.com/macros/s/AKfycbzkljxxTG-4BvwZECQQUDd3E4gu1m631_k2w3wLW6bJ53lSm0gssV5mDfM0l7lgsYQL/exec" method="post">
+        <div class="contact-form">
+
+            
+            <div class="contacto-nombre">
+                <label for="nombre" class="contact-field">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" size="50">
+            </div>
+            <div class="contacto-email">
+                <label for="email" class="contact-field">Email:</label>
+                <input type="text" name="email" id="email" size="50">
+            </div>
+            <div class="contacto-">
+                <label for="telefono" class="contact-field">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" size="30">
+                <select name="tipotel">
+                    <option value="celular">Celular</option>
+                    <option value="linea" selected>Fijo</option>
+                  </select>
+            </div>
+            <div class="contacto-mascota">
+                <fieldset class="contact-field">
+                    <legend>Mascota</legend>
+                    <label for="perro">Perro</label>
+                    <input type="checkbox" name="mascota" id="perro" value="perro">
+                    <label for="gato">Gato</label>
+                    <input type="checkbox" name="mascota" id="gato" value="gato">
+                    <label for="otra">Otra/No tengo mascota</label>
+                    <input type="checkbox" name="mascota" id="otra" value="otra">
+                </fieldset>
+            </div>
+            <div class="contacto-mensaje">
+            <label for="mensaje" class="contact-field">Mensaje</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="10" cols="200"></textarea>
+            </div>
+            <div class="contacto-boton">
+                <button class="boton" type="button" onclick="validarFormulario()">Enviar</button>
+            </div> 
+        </div>
+        
+        </form>
+        
+
+
+    </section>
+    <section class="base">
+        <div class="base-izquierda">
+            <img src="img/icon_cards.svg" alt="Medios de pago">
+        </div>
+        <div class="centro">
+            <img src="img/icon_local.svg" alt="Retiro en tienda">
+            <p>Retiro gratis en cualquiera de nuestras sucursales</p>
+        </div>
+        <div class="base-derecha">
+            <img src="img/icon_envio.svg" alt="Envíos">
+            <p>Envíos en el día en CABA y GBA</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-wraper">
+            <div class="footer-izquierda">
+                © 2024 - Todos los derechos reservado
+            </div>
+            <div class="footer-derecha">
+                CaC - Laura Sueiro - Federico Torres
+            </div>
+        </div>
+    </footer>
+    <script src="js/valform.js"></script>
+</body>
+</html>
